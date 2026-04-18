@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		
+    #menu{
+            margin:auto;
+            width:800px;
+            font-family:calibri;
+        }
+        ul, ol{
+            list-style:none;
+        }
+        .botones{
+            width:800px;
+            margin:0 auto;
+        }
+        .botones > li{
+            float:left;
+            width:200px;
+        }
+        .botones li a{
+            background-color:black;
+            color:white;
+            text-decoration:none;
+            padding:10px 12px;
+            text-align:center;
+            display:block;
+        }
+        .botones li a:hover{
+            color:orange;
+        }
+        .botones li ul{
+            display: none;
+            min-width:160px;
+            position:absolute;
+        }
+        .botones li:hover > ul{
+            display:block;
+        }
+/*TAMAÑO PEQUEÑO*/
+         @media (max-width: 600px){
+             #menu{
+                 width:100%;
+             }
+             .botones{
+                 width:100%;
+             }
+             .botones >li{
+                 width:25%;
+             }
+             .botones li ul{
+                 min-width:25%;
+             }
+         }
+
+	</style>
+</head>
+<body>
+<div id="menu">
+<ul class="botones">
+    <li>
+        <a href="#">
+    INICIO
+        </a>
+    </li>
+    <li>
+        <a href="#">
+    GALERIA
+        </a>
+    </li>
+    <li>
+        <a href="#">
+    VIDEOS
+        </a>
+    </li>
+    <li>
+        <a href="#">
+    CONTACTOS
+        </a>
+        <ul>
+            <li>
+        <a href="#">
+    SUSANA
+        </a>
+    </li>
+    <li>
+        <a href="#">
+    CARLOS
+        </a>
+    </li>
+    <li>
+        <a href="#">
+    BENITO
+        </a>
+    </li>
+        </ul>
+    </li>
+</ul>
+</div>
+
+</body>
+</html>
